@@ -1,54 +1,48 @@
-# Proyecto-GitFlow-Vexis
-**URL del repositorio:** https://github.com/juliolpzsu/Proyecto-GitFlow-Vexis.git
-## Estructura del proyecto:
-
 # Vexis
 
-Vexis es un proyecto de una marca de ropa urbana. La página web presenta
-la marca, su catálogo, información sobre el equipo y diferentes formas
-de contacto.
+**Temática:** tienda online de ropa urbana.
+
+Vexis es una web informativa de una marca de ropa urbana. Presenta la marca, su catálogo de prendas, la historia y el equipo, y los datos de contacto. No tiene carrito ni pagos.
+
+Proyecto realizado en equipo de cuatro personas para practicar GitFlow y la publicación con GitHub Pages.
+
+- **URL del repositorio:** https://github.com/juliolpzsu/Proyecto-GitFlow-Vexis
+- **Web publicada:** https://juliolpzsu.github.io/Proyecto-GitFlow-Vexis
+- **Tablero Kanban (Trello):** https://trello.com/b/HfyKM75p/vexis
 
 ## Estructura del proyecto
 
-Vexis/
-│
+```
+Proyecto-GitFlow-Vexis/
 ├── index.html
 ├── catalogo.html
 ├── nosotros.html
 ├── contacto.html
-│
 ├── styles.css
-│
 └── README.md
-
-### Descripción de los archivos
+```
 
 | Archivo         | Descripción                                               |
 | --------------- | --------------------------------------------------------- |
 | `index.html`    | Página principal de Vexis.                                |
-| `catalogo.html` | Página donde se muestran los productos del catálogo.      |
-| `nosotros.html` | Información sobre la historia, valores y equipo de Vexis. |
-| `contacto.html` | Página con la información y formulario de contacto.       |
-| `styles.css`    | Hoja de estilos utilizada para diseñar las páginas.       |
-| `README.md`     | Documentación y descripción del proyecto.                 |
+| `catalogo.html` | Productos del catálogo por categorías.                    |
+| `nosotros.html` | Historia, valores y equipo de Vexis.                      |
+| `contacto.html` | Datos de contacto de la marca.                            |
+| `styles.css`    | Hoja de estilos común a todas las páginas.                |
+| `README.md`     | Documentación del proyecto.                               |
 
 ## Secciones de la web
 
-* **Inicio:** Presentación de la marca y acceso al catálogo.
-* **Catálogo:** Productos y prendas disponibles.
-* **Nosotros:** Historia, valores y equipo de Vexis.
-* **Contacto:** Información para ponerse en contacto con la marca.
+* **Inicio:** presentación de la marca y acceso al catálogo.
+* **Catálogo:** prendas disponibles por categorías.
+* **Nosotros:** historia, valores y equipo.
+* **Contacto:** formas de ponerse en contacto con la marca.
 
 ## Tecnologías utilizadas
 
 * HTML5
 * CSS3
 
-## Estado del proyecto
+## Historial de versiones
 
-Versión actual: `v1.0.0`
- 
-## Historial de versiones:
-
-## Incidencias recibidas y soluciones: 
-
+## Incidencias recibidas y soluciones
