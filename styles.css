@@ -1,0 +1,845 @@
+/*====== Pagina Principal =======*/
+/* =========================
+   RESET Y CONFIGURACIÓN
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111;
+    color: #fff;
+}
+
+
+/* =========================
+   CABECERA
+   ========================= */
+
+.cabecera {
+    width: 100%;
+    min-height: 75px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #111;
+    border-bottom: 1px solid #292929;
+}
+
+/* Logo */
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    color: #bdbdbd;
+}
+
+
+/* =========================
+   MENÚ
+   ========================= */
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+}
+
+.menu a {
+    position: relative;
+
+    color: #ddd;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    transition: color 0.3s ease;
+}
+
+.menu a::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+
+    width: 0;
+    height: 2px;
+
+    background: #fff;
+
+    transition: width 0.3s ease;
+}
+
+.menu a:hover {
+    color: #fff;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+
+/* =========================
+   PORTADA
+   ========================= */
+
+main {
+    flex: 1;
+}
+
+.portada {
+    min-height: calc(100vh - 135px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 20px;
+    text-align: center;
+
+    background:
+        radial-gradient(circle at center,
+            #292929 0%,
+            #171717 40%,
+            #111 75%);
+}
+
+/* Título */
+
+.portada h1 {
+    margin-bottom: 15px;
+
+    font-size: clamp(5rem, 15vw, 11rem);
+    font-weight: 900;
+    line-height: 0.9;
+    letter-spacing: -8px;
+
+    color: #fff;
+
+    text-transform: uppercase;
+}
+
+
+/* Eslogan */
+
+.eslogan {
+    max-width: 600px;
+    margin-bottom: 35px;
+
+    color: #bdbdbd;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   BOTÓN
+   ========================= */
+
+.boton {
+    display: inline-block;
+
+    padding: 15px 32px;
+
+    color: #111;
+    background: #fff;
+
+    border: 2px solid #fff;
+    border-radius: 3px;
+
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.boton:hover {
+    color: #fff;
+    background: transparent;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   PIE DE PÁGINA
+   ========================= */
+
+.pie {
+    min-height: 60px;
+
+    padding: 15px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #0b0b0b;
+    border-top: 1px solid #292929;
+
+    color: #777;
+    font-size: 0.8rem;
+}
+
+.version {
+    color: #555;
+}
+
+
+/* =========================
+   RESPONSIVE - TABLET
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .cabecera {
+        padding: 0 5%;
+    }
+
+    .menu ul {
+        gap: 20px;
+    }
+
+    .menu a {
+        font-size: 0.85rem;
+    }
+
+    .portada h1 {
+        letter-spacing: -5px;
+    }
+}
+
+
+/* =========================
+   RESPONSIVE - MÓVIL
+   ========================= */
+
+@media (max-width: 600px) {
+
+    .cabecera {
+        min-height: auto;
+        padding: 20px;
+
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    .menu ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu a {
+        font-size: 0.8rem;
+    }
+
+    .portada {
+        min-height: calc(100vh - 150px);
+    }
+
+    .portada h1 {
+        font-size: 5rem;
+        letter-spacing: -4px;
+    }
+
+    .eslogan {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .boton {
+        padding: 13px 25px;
+    }
+
+    .pie {
+        padding: 15px 20px;
+
+        flex-direction: column;
+        gap: 8px;
+
+        text-align: center;
+    }
+}
+
+/*====== Contacto =======*/
+.contacto {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.contacto-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contacto-intro h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: #111111;
+}
+
+.contacto-intro p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #6B6B6B;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contacto-contenido {
+    display: flex;
+    justify-content: center;
+}
+
+.contacto-info {
+    width: 100%;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.contacto-item {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #e5e2de;
+}
+
+.contacto-item h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 20px;
+    color: #C4622D;
+}
+
+.contacto-item p {
+    margin: 0;
+    color: #6B6B6B;
+    line-height: 1.7;
+}
+
+.contacto-item a {
+    color: #111111;
+    text-decoration: none;
+}
+
+.contacto-item a:hover {
+    color: #C4622D;
+}
+
+.redes {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.redes a {
+    color: #111111;
+    font-weight: bold;
+}
+
+.redes a:hover {
+    color: #C4622D;
+}
+
+
+/* ========================================
+   MENÚ ACTIVO
+   ======================================== */
+
+.menu a.activo {
+    color: #C4622D;
+}
+
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 768px) {
+
+    .contacto {
+        padding: 40px 20px;
+    }
+
+    .contacto-intro h1 {
+        font-size: 36px;
+    }
+
+    .contacto-info {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-item {
+        padding: 25px;
+    }
+}
+
+/*====== Catalogo =======*/
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+header {
+    background-color: #111;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: #ff6b2c;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin: 0 0 10px;
+}
+
+.hero h1 span {
+    color: #ff6b2c;
+}
+
+.hero p {
+    color: #ccc;
+    font-size: 17px;
+}
+
+.catalogo {
+    width: 85%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.catalogo h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.categorias {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.categorias span {
+    display: inline-block;
+    background-color: white;
+    padding: 10px 18px;
+    margin: 5px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.producto {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.producto img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.info {
+    padding: 20px;
+}
+
+.info h3 {
+    margin: 0 0 8px;
+}
+
+.categoria {
+    color: #ff6b2c;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+footer {
+    background-color: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+}
+
+@media (max-width: 800px) {
+    .productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .productos {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/*====== Nosotros =======*/
+.seccion-nosotros {
+    padding: 90px 7%;
+}
+
+.contenido-nosotros {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.seccion-nosotros h1 {
+    margin-bottom: 25px;
+    color: #ffffff;
+
+    font-size: clamp(3rem, 7vw, 6rem);
+    font-weight: 900;
+    letter-spacing: -4px;
+    text-transform: uppercase;
+}
+
+.seccion-nosotros h2 {
+    margin-bottom: 25px;
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.seccion-nosotros p {
+    max-width: 800px;
+    color: #aaa;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* INTRODUCCIÓN */
+.seccion-nosotros:first-child {
+    min-height: 55vh;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(circle at center, #292929 0%, #171717 45%, #111 80%);
+}
+
+/* HISTORIA */
+.historia {
+    background: #151515;
+}
+
+.historia p {
+    margin-bottom: 20px;
+}
+
+/* VALORES */
+.valores {
+    background: #111;
+}
+
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 45px;
+}
+
+.valor {
+    padding: 30px;
+    background: #191919;
+    border: 1px solid #292929;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.valor:hover {
+    transform: translateY(-5px);
+    border-color: #555;
+}
+
+.valor h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+/* EQUIPO */
+.equipo {
+    background: #151515;
+}
+
+.introduccion-equipo {
+    margin-bottom: 45px;
+}
+
+.equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.miembro {
+    padding: 35px 25px;
+    text-align: center;
+    background: #111;
+    border: 1px solid #292929;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #fff;
+    color: #111;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.miembro h3 {
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+}
+
+.miembro .cargo {
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .seccion-nosotros {
+        padding: 65px 5%;
+    }
+
+    .valores-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .equipo-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .seccion-nosotros h1 {
+        font-size: 3.5rem;
+        letter-spacing: -2px;
+    }
+
+    .seccion-nosotros h2 {
+        font-size: 2rem;
+    }
+
+    .seccion-nosotros p {
+        font-size: 1rem;
+    }
+}
+
+/* =========================
+   TABLA DEL EQUIPO
+   ========================= */
+
+.tabla-equipo {
+    width: 100%;
+    margin-top: 40px;
+
+    overflow-x: auto;
+}
+
+.tabla-equipo table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: #111;
+    border: 1px solid #333;
+
+    color: #d0d0d0;
+}
+
+.tabla-equipo th,
+.tabla-equipo td {
+    padding: 20px;
+
+    border: 1px solid #333;
+
+    text-align: left;
+    vertical-align: top;
+
+    line-height: 1.8;
+}
+
+
+/* Cabecera */
+
+.tabla-equipo thead th {
+    background: #222;
+
+    color: #ffffff;
+
+    font-size: 1rem;
+    font-weight: 800;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/* Primera columna */
+
+.tabla-equipo tbody th {
+    width: 70px;
+
+    background: #1a1a1a;
+
+    color: #b7ff00;
+
+    text-align: center;
+
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+
+/* Filas */
+
+.tabla-equipo tbody tr {
+    transition: background 0.2s ease;
+}
+
+.tabla-equipo tbody tr:hover {
+    background: #1c1c1c;
+}
+
+
+/* Texto de las celdas */
+
+.tabla-equipo td {
+    font-size: 0.95rem;
+    color: #c8c8c8;
+}
+
+
+/* Primera columna de contenido */
+
+.tabla-equipo tbody td:nth-child(2) {
+    color: #ffffff;
+}
+
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+    .tabla-equipo {
+        overflow-x: auto;
+    }
+
+    .tabla-equipo table {
+        min-width: 700px;
+    }
+
+    .tabla-equipo th,
+    .tabla-equipo td {
+        padding: 15px;
+        font-size: 0.85rem;
+    }
+
+}
