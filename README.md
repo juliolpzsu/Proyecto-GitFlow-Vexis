@@ -46,7 +46,7 @@ Vexis/
 
 ## Estado del proyecto
 
-Versión actual: `v0.0.0`
+Versión actual: `v1.0.0`
  
 ## Historial de versiones:
 
