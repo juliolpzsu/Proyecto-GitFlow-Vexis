@@ -44,5 +44,13 @@ Proyecto-GitFlow-Vexis/
 * CSS3
 
 ## Historial de versiones
+### v1.0.0
+Primera versión publicada. Estructura base de la web:
+- Hoja de estilos común con cabecera, menú y pie.
+- Página de inicio con portada, eslogan y botón "Ver catálogo".
+- Catálogo con seis prendas por categorías.
+- Página de contacto con correo, teléfono, dirección, horario y redes.
+- Página "Nosotros" con historia, valores y equipo.
+- Correcciones previas a la publicación: estilos del catálogo limitados a su página, cabecera y menú comunes en todas las páginas y una única hoja de estilos.
 
 ## Incidencias recibidas y soluciones
