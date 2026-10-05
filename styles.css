@@ -216,7 +216,7 @@ main {
         radial-gradient(circle at 75% 50%,
             #444 0%,
             #222 35%,
-            #111 75%,
+            #111 75%
         );
 
     border: 1px solid #292929;
@@ -271,7 +271,7 @@ main {
 
 }
 
-.banner-contenido > p.baner-etiqueta {
+.banner-contenido > p {
     max-width: 500px;
     margin-bottom: 30px;
 
@@ -336,7 +336,7 @@ PRENDAS DESTACADAS
 
 }
 
-.prenda {
+.prenda:hover {
     transform: translateY(-6px);
     border-color: #444;
 }
@@ -365,7 +365,7 @@ PRENDAS DESTACADAS
 
 }
 
-.prenda .prenda-imagen img {
+.prenda:hover .prenda-imagen img {
     transform: scale(1.05);
 }
 
