@@ -498,7 +498,8 @@ main {
     position: relative;
     min-height: 210px;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: stretch;
     background-color: #161616;
     border: 1px solid #292929;
     border-radius: 14px;
@@ -510,6 +511,34 @@ main {
     transform: translateY(-6px);
     background-color: #1b1b1b;
     border-color: #444;
+}
+
+/* ========================= GALERÍA DE PRENDAS ========================= */
+.producto-foto {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.etiqueta-nuevo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+    padding: 5px 12px;
+    background-color: #ff6b2c;
+    color: #111;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.tallas {
+    margin: 0 0 12px;
+    color: #aaa;
+    font-size: 14px;
 }
 
 /* Zona de información */
