@@ -82,6 +82,41 @@
 
             </div>
 
+            <div class="contacto-formulario">
+
+                <h2>Formulario de contacto</h2>
+
+                <form>
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div>
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+
+                    <div>
+                        <label for="motivo">Motivo</label>
+                        <select id="motivo" name="motivo" required>
+                            <option value="">Selecciona un motivo</option>
+                            <option value="consulta">Consulta</option>
+                            <option value="problema">Problema</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+
+            </div>
+
         </section>
 
     </main>
@@ -93,3 +128,6 @@
 </body>
 
 </html>
+
+
+
