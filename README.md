@@ -20,6 +20,12 @@ Proyecto-GitFlow-Vexis/
 ├── contacto.html
 ├── styles.css
 └── README.md
+└── camisa-elvira.jpg
+└── camiseta-kaelen.jpg
+└── camiseta-noxera.jpg
+└── sudadera-orven.jpg
+└── sudadera-velkor.jpg
+└── vaqueros-draven.jpg
 ```
 
 | Archivo         | Descripción                                               |
@@ -52,5 +58,11 @@ Primera versión publicada. Estructura base de la web:
 - Página de contacto con correo, teléfono, dirección, horario y redes.
 - Página "Nosotros" con historia, valores y equipo.
 - Correcciones previas a la publicación: estilos del catálogo limitados a su página, cabecera y menú comunes en todas las páginas y una única hoja de estilos.
+### v2.0.0
+Segunda versión publicada. Cambios agregados con respecto a la v1:
+- Galería con fotos, nombre, precio , y guía de tallas en el catálogo
+- Nueva colección agregada al final de la página de inicio
+- Formulario para contactar agregado en contacto
+- Cambios en la repartición de tareas del equipo
 
 ## Incidencias recibidas y soluciones
