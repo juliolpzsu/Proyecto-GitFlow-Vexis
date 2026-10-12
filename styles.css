@@ -101,6 +101,14 @@ body {
     width: 100%;
 }
 
+.menu a.activo {
+    color: #fff;
+}
+
+.menu a.activo::after {
+    width: 100%;
+}
+
 /* =========================
    PORTADA
    ========================= */
