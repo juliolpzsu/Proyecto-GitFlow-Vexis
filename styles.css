@@ -224,8 +224,7 @@ main {
         radial-gradient(circle at 75% 50%,
             #444 0%,
             #222 35%,
-            #111 75%
-        );
+            #111 75%);
 
     border: 1px solid #292929;
 }
@@ -279,7 +278,7 @@ main {
 
 }
 
-.banner-contenido > p {
+.banner-contenido>p {
     max-width: 500px;
     margin-bottom: 30px;
 
@@ -1332,4 +1331,48 @@ RESPONSIVE
     .contacto-formulario button {
         width: 100%;
     }
+}
+
+
+/* =========================
+   CAMBIOS PARA MÓVIL
+   ========================= */
+
+@media (max-width: 767px) {
+
+    /* Menú en columna */
+    .menu ul {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 15px;
+    }
+
+    /* Galería del catálogo a dos columnas */
+    .productos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        min-width: 0;
+    }
+
+    /* Evitar desbordamientos en las tarjetas */
+    .producto {
+        min-width: 0;
+    }
+
+    .producto-info {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .producto-foto {
+        max-width: 100%;
+    }
+
+    /* Evitar scroll horizontal de la página */
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
 }
