@@ -65,4 +65,10 @@ Segunda versión publicada. Cambios agregados con respecto a la v1:
 - Formulario para contactar agregado en contacto
 - Cambios en la repartición de tareas del equipo
 
+### v3.0.0
+Tercera version publicada. Cambios agregados:
+ -Agregacion menu activo
+ -Cambio ruta imagenes a una carpeta y alt mas descriptivos
+ - Creacion version estandar para movil
+
 ## Incidencias recibidas y soluciones
