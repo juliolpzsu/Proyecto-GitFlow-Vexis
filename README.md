@@ -14,18 +14,19 @@ Proyecto realizado en equipo de cuatro personas para practicar GitFlow y la publ
 
 ```
 Proyecto-GitFlow-Vexis/
+└── img/
+ └── camisa-elvira.jpg
+ └── camiseta-kaelen.jpg
+ └── camiseta-noxera.jpg
+ └── sudadera-orven.jpg
+ └── sudadera-velkor.jpg
+ └── vaqueros-draven.jpg
 ├── index.html
 ├── catalogo.html
 ├── nosotros.html
 ├── contacto.html
 ├── styles.css
 └── README.md
-└── camisa-elvira.jpg
-└── camiseta-kaelen.jpg
-└── camiseta-noxera.jpg
-└── sudadera-orven.jpg
-└── sudadera-velkor.jpg
-└── vaqueros-draven.jpg
 ```
 
 | Archivo         | Descripción                                               |
